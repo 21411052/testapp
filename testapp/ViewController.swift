@@ -8,8 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var myLabel: UILabel!
+    @IBAction func changeLabel(_ sender: Any) {
+        myLabel.text = "You changed me!"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
